@@ -1,0 +1,2 @@
+LOCAL_MONGO_DB = "localhost:27017"
+MONGO_CLUSTER_URL = None
