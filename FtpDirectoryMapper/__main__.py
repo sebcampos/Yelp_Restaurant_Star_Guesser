@@ -1,10 +1,8 @@
-import __init__
+import ftptools
+import sys
 
-
-utils.create_connections()
-print("Connections made...")
-
-atexit.register(utils.tear_down)
-print("Tear down registered")
-
-utils.iterate()
+if len(sys.argv) > 1:
+    starting_dir = sys.argv[-1]
+    ftptools.utils.iterate(starting_dir)
+else:
+    ftptools.utils.iterate()
